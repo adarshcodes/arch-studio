@@ -14,6 +14,19 @@ body {
   box-sizing: border-box;
 }
 
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body li {
+  list-style: none;
+}
+
+.app {
+  padding: 0 16.5rem;
+}
+
 body {
   font-family: "League Spartan", sans-serif;
   font-size: 1.8rem;
@@ -45,5 +58,54 @@ body {
   font-size: 3.2rem;
   font-weight: bold;
   line-height: 40rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  max-width: 50.4rem;
+  padding: 5.6rem 0;
+}
+
+.navbar__logo {
+  margin-right: 9.484rem;
+}
+
+.navbar__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__list-item {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  color: #7d828f;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.navbar__list-item:hover {
+  color: #1b1d23;
+}
+
+.navbar__list-item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1b1d23;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar__list-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 /*# sourceMappingURL=main.css.map */
