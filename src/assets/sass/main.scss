@@ -8,7 +8,8 @@
 @import "./base/typography";
 
 // Components
-@import "./components/navigation.styles";
+@import "./components/pagination.styles";
 // @import "./components/votes";
 
-// Pages
+// Routes
+@import "./routes/navigation.styles";
