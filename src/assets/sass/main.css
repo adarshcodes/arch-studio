@@ -80,6 +80,7 @@ body {
   margin-right: 4.8rem;
   background-color: #c8ccd8;
   animation: oscillaFilo 1.5s ease-in-out 0s infinite alternate;
+  transition: all 0.3s;
 }
 
 .pagename__page {
@@ -87,6 +88,16 @@ body {
   letter-spacing: 1.8rem;
   font-weight: 500;
   line-height: 2.4rem;
+  transition: all 0.3s;
+}
+
+.pagename:hover .pagename__page {
+  color: #1b1d23;
+  letter-spacing: 2rem;
+}
+
+.pagename:hover .pagename__line {
+  background-color: #1b1d23;
 }
 
 .navbar {
