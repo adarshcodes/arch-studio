@@ -14,19 +14,26 @@ body {
 .heading-l {
 	font-size: 9.6rem;
 	font-weight: bold;
-	line-height: 80rem;
+	line-height: 8rem;
 	letter-spacing: -0.2rem;
 }
 
 .heading-m {
 	font-size: 7.2rem;
 	font-weight: bold;
-	line-height: 64rem;
+	line-height: 6.4rem;
 	letter-spacing: -0.2rem;
 }
 
 .heading-s {
 	font-size: 3.2rem;
 	font-weight: bold;
-	line-height: 40rem;
+	line-height: 4rem;
+}
+
+.hero-section__btn-slider-container__slide-btn {
+	background-color: $dark-grey;
+	color: $light-grey;
+	cursor: pointer;
+	margin: 0.5rem;
 }

@@ -1,0 +1,28 @@
+.button {
+	padding: 2.2rem 3.5rem;
+	background-color: $very-dark-blue;
+	color: $white;
+	transition: all 0.3s;
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	&:hover {
+		background-color: $dark-grey;
+	}
+
+	&:active {
+		background-color: $light-grey;
+	}
+
+	.arrow-icon {
+		padding-left: 2.4rem;
+		filter: invert(100);
+		transition: all 0.3s;
+	}
+
+	&:hover .arrow-icon {
+		transform: translateX(1rem);
+	}
+}
