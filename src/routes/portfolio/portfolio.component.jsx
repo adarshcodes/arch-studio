@@ -8,7 +8,7 @@ export default function Portfolio() {
 	return (
 		<div>
 			<Helmet>
-				<title>Arch Studio | Contact Us</title>
+				<title>Arch Studio | Portfolio</title>
 			</Helmet>
 			<Pagination page={"portfolio"} />
 		</div>
