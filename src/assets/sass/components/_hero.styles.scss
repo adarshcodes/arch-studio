@@ -29,6 +29,42 @@
 	margin-bottom: 4.1rem;
 }
 
+.swiper {
+	position: static !important;
+}
+
 .swiper-pagination {
 	width: 32rem !important;
+	bottom: 0 !important;
+	left: 8.5rem !important;
+	display: inline-flex;
+	position: absolute;
+}
+
+.swiper-pagination-bullet {
+	border-radius: 0 !important;
+	width: auto !important;
+	height: auto !important;
+	padding: 2.8rem 3.2rem;
+	margin: 0 !important;
+	color: $dark-grey;
+	background-color: $white !important;
+	opacity: 1 !important;
+	font-weight: bold !important;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: $very-light-grey !important;
+	}
+
+	&-active {
+		background-color: $very-dark-blue !important;
+		color: $white !important;
+	}
+}
+
+.swiper-pagination-bullet-active {
+	&:hover {
+		background-color: $very-dark-blue !important;
+	}
 }
