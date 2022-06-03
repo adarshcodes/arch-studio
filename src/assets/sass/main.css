@@ -135,6 +135,41 @@ body {
   transform: translateX(1rem);
 }
 
+.hero-section {
+  width: 100%;
+}
+
+.swiper {
+  position: relative;
+  height: 72rem;
+  margin: 0 !important;
+}
+
+.hero-img {
+  width: 100%;
+  filter: brightness(0.65);
+}
+
+.slider-hero-info {
+  position: absolute;
+  top: 18.6rem;
+  left: 19rem;
+  width: 54.4rem;
+  color: #ffffff;
+}
+
+.hero-title {
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  margin-bottom: 4.1rem;
+}
+
+.swiper-pagination {
+  width: 32rem !important;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;

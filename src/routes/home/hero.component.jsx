@@ -1,12 +1,10 @@
 import React from "react";
-import { Autoplay, Pagination, EffectCreative } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/effect-creative";
 
 import Button from "../../components/button.component";
 import Arrow from "../../assets/images/icons/icon-arrow.svg";
@@ -16,21 +14,12 @@ export default function Hero() {
 	return (
 		<section className="hero-section">
 			<Swiper
-				spaceBetween={0}
+				spaceBetween={20}
 				slidesPerView={1}
 				loop={true}
-				// autoplay={{
-				// 	delay: 1500,
-				// 	disableOnInteraction: false,
-				// }}
-				creativeEffect={{
-					prev: {
-						shadow: true,
-						translate: [0, 0, -400],
-					},
-					next: {
-						translate: ["100%", 0, 0],
-					},
+				autoplay={{
+					delay: 2500,
+					disableOnInteraction: false,
 				}}
 				pagination={{
 					clickable: true,
@@ -41,7 +30,7 @@ export default function Hero() {
 						);
 					},
 				}}
-				modules={[EffectCreative, Autoplay, Pagination]}
+				modules={[Autoplay, Pagination]}
 				className="mySwiper"
 			>
 				{Slides.map((slide) => (
@@ -57,16 +46,20 @@ export default function Hero() {
 								media="(max-width: 850px)"
 								type="image/jpeg"
 							/>
-							<img src={slide.image.desktop} alt={slide.name} />
+							<img
+								className="hero-img"
+								src={slide.image.desktop}
+								alt={slide.name}
+							/>
 						</picture>
 						<div className="slider-hero-info">
-							<h1>{slide.title}</h1>
-							<p>{slide.text}</p>
+							<h1 className="heading-l hero-title">{slide.title}</h1>
+							<p className="hero-description">{slide.text}</p>
+							<Button
+								btn={`See Our Portfolio `}
+								arrow={<img src={Arrow} alt="arrow" className="arrow-icon" />}
+							/>
 						</div>
-						<Button
-							btn={`See Our Portfolio `}
-							arrow={<img src={Arrow} alt="arrow" className="arrow-icon" />}
-						/>
 					</SwiperSlide>
 				))}
 			</Swiper>
