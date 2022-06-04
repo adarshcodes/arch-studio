@@ -46,6 +46,11 @@ body {
   font-weight: bold;
   line-height: 8rem;
   letter-spacing: -0.2rem;
+  transition: all 0.5s;
+}
+
+.heading-l:hover {
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .heading-m {
@@ -53,12 +58,22 @@ body {
   font-weight: bold;
   line-height: 6.4rem;
   letter-spacing: -0.2rem;
+  transition: all 0.5s;
+}
+
+.heading-m:hover {
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .heading-s {
   font-size: 3.2rem;
   font-weight: bold;
   line-height: 4rem;
+  transition: all 0.5s;
+}
+
+.heading-s:hover {
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .hero-section__btn-slider-container__slide-btn {
@@ -211,11 +226,27 @@ body {
   position: relative;
 }
 
+.welcome-section .welcome-img-container {
+  overflow: hidden;
+  min-width: 35rem;
+}
+
+.welcome-section .welcome-img-container:hover .welcome-img {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.welcome-section .welcome-img-container .welcome-img {
+  transition: all 0.3s;
+  z-index: -1;
+}
+
 .welcome-section .bold-span {
   position: absolute;
   top: 0;
   left: 0;
   color: #eeeff4;
+  z-index: 100;
 }
 
 .welcome-section__content {
@@ -266,6 +297,17 @@ body {
 .smallTeams-section__content .smallTeams-title {
   margin-bottom: 2.7rem;
   color: #ffffff;
+}
+
+.featured-section {
+  margin-bottom: 20rem;
+}
+
+.featured-section .featured-title-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6.4rem;
 }
 
 .navbar {

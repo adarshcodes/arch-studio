@@ -7,7 +7,6 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 
 import Button from "../../components/button.component";
-import Arrow from "../../assets/images/icons/icon-arrow.svg";
 import Slides from "./slides";
 
 export default function Hero() {
@@ -55,11 +54,7 @@ export default function Hero() {
 						<div className="slider-hero-info">
 							<h1 className="heading-l hero-title">{slide.title}</h1>
 							<p className="hero-description">{slide.text}</p>
-							<Button
-								btn={`See Our Portfolio `}
-								linkedTo={"/portfolio"}
-								arrow={<img src={Arrow} alt="arrow" className="arrow-icon" />}
-							/>
+							<Button btn={`See Our Portfolio `} linkedTo={"/portfolio"} />
 						</div>
 					</SwiperSlide>
 				))}

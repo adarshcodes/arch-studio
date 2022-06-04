@@ -1,0 +1,8 @@
+.featured-section {
+	margin-bottom: 20rem;
+
+	.featured-title-part {
+		@include flex-row-space-between;
+		margin-bottom: 6.4rem;
+	}
+}

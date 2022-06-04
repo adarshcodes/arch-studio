@@ -16,6 +16,11 @@ body {
 	font-weight: bold;
 	line-height: 8rem;
 	letter-spacing: -0.2rem;
+	transition: all 0.5s;
+
+	&:hover {
+		text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+	}
 }
 
 .heading-m {
@@ -23,12 +28,22 @@ body {
 	font-weight: bold;
 	line-height: 6.4rem;
 	letter-spacing: -0.2rem;
+	transition: all 0.5s;
+
+	&:hover {
+		text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+	}
 }
 
 .heading-s {
 	font-size: 3.2rem;
 	font-weight: bold;
 	line-height: 4rem;
+	transition: all 0.5s;
+
+	&:hover {
+		text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+	}
 }
 
 .hero-section__btn-slider-container__slide-btn {

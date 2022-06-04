@@ -6,6 +6,7 @@ import Pagination from "../../components/pagination.component";
 import Hero from "./hero.component";
 import Welcome from "./welcome.component";
 import SmallTeams from "./smallTeams.component";
+import Featured from "./featured-component";
 
 export default function Home() {
 	return (
@@ -17,6 +18,7 @@ export default function Home() {
 			<Hero />
 			<Welcome />
 			<SmallTeams />
+			<Featured />
 		</div>
 	);
 }
