@@ -63,7 +63,7 @@ function Featured() {
 						img={card.image.desktop}
 						imgTab={card.image.tablet}
 						imgMob={card.image.mobile}
-						link={"/portolio"}
+						link={"/portfolio"}
 						subtitle={"View All Projects"}
 					/>
 				))}

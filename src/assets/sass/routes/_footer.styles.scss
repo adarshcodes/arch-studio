@@ -1,0 +1,62 @@
+.footer {
+	@include flex-row;
+	max-width: 100%;
+	position: relative;
+
+	&__logo {
+		padding: 8rem 5.2rem;
+		background-color: $very-dark-blue;
+
+		svg {
+			filter: invert(95%) sepia(99%) saturate(19%) hue-rotate(347deg)
+				brightness(106%) contrast(100%);
+		}
+	}
+
+	&__list {
+		min-width: 78.4rem;
+		@include flex-row;
+		align-items: center;
+		background-color: $very-light-grey;
+		padding: 8.8rem 0 8.8rem 8.5rem;
+
+		&-item {
+			font-size: 1.8rem;
+			font-weight: bold;
+			line-height: 2.5rem;
+			color: $medium-grey;
+			transition: all 0.3s;
+			position: relative;
+			margin-right: 6.1rem;
+
+			&:hover {
+				color: $very-dark-blue;
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				transform: scaleX(0);
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				background-color: $very-dark-blue;
+				transform-origin: bottom right;
+				transition: transform 0.3s ease-out;
+			}
+
+			&:hover:after {
+				transform: scaleX(1);
+				transform-origin: bottom left;
+			}
+		}
+	}
+
+	.button {
+		position: absolute;
+		top: 50%;
+		right: 7.8%;
+		transform: translate(0, -50%);
+	}
+}
