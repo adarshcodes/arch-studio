@@ -137,6 +137,7 @@ body {
 
 .hero-section {
   width: 100%;
+  position: relative;
 }
 
 .swiper {
@@ -173,7 +174,7 @@ body {
 .swiper-pagination {
   width: 32rem !important;
   bottom: 0 !important;
-  left: 8.5rem !important;
+  left: -8.1rem !important;
   display: inline-flex;
   position: absolute;
 }
