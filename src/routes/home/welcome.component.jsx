@@ -31,11 +31,13 @@ function Welcome() {
 						</p>
 					</div>
 				</div>
-				<img
-					src={WelcomeImg}
-					alt="architecture welcome"
-					className="welcome-img"
-				/>
+				<div className="welcome-img-container">
+					<img
+						src={WelcomeImg}
+						alt="architecture welcome"
+						className="welcome-img"
+					/>
+				</div>
 			</div>
 		</section>
 	);
