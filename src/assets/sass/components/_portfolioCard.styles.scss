@@ -1,5 +1,6 @@
 .portfolio-card {
 	width: 35rem;
+	height: 56rem;
 	position: relative;
 	cursor: pointer;
 	overflow: hidden;
@@ -24,7 +25,7 @@
 
 	&:hover .portfolio-card-id {
 		top: 20%;
-		right: 30%;
+		opacity: 0.9;
 	}
 
 	.portfolio-card-title-container {
@@ -37,8 +38,10 @@
 
 	&:hover .portfolio-card-title-container {
 		bottom: 25%;
-		left: 25%;
-		text-align: center;
+
+		h5 {
+			text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2) !important;
+		}
 	}
 
 	.portfolio-link {
@@ -77,5 +80,14 @@
 		&:hover .arrow-icon {
 			transform: translateX(0.5rem);
 		}
+	}
+}
+
+.portfolio-container {
+	@include flex-row-space-between;
+	flex-wrap: wrap;
+
+	.portfolio-page-card {
+		margin-bottom: 5rem;
 	}
 }

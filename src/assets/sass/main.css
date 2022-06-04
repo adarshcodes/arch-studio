@@ -318,6 +318,7 @@ body {
 
 .portfolio-card {
   width: 35rem;
+  height: 56rem;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -343,7 +344,7 @@ body {
 
 .portfolio-card:hover .portfolio-card-id {
   top: 20%;
-  right: 30%;
+  opacity: 0.9;
 }
 
 .portfolio-card .portfolio-card-title-container {
@@ -356,8 +357,10 @@ body {
 
 .portfolio-card:hover .portfolio-card-title-container {
   bottom: 25%;
-  left: 25%;
-  text-align: center;
+}
+
+.portfolio-card:hover .portfolio-card-title-container h5 {
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2) !important;
 }
 
 .portfolio-card .portfolio-link .arrow-icon {
@@ -394,6 +397,17 @@ body {
 
 .portfolio-card:hover .portfolio-link:hover .arrow-icon {
   transform: translateX(0.5rem);
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-container .portfolio-page-card {
+  margin-bottom: 5rem;
 }
 
 .navbar {
