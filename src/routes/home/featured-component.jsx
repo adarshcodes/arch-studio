@@ -2,7 +2,7 @@ import React from "react";
 
 import Button from "../../components/button.component";
 
-import PortfolioCard from "../../components/portfolioCard.component";
+import FeaturedCard from "../../components/featuredCard.component";
 
 // importing images
 import delSol from "../../assets/images/portfolio/image-del-sol.jpg";
@@ -56,7 +56,7 @@ function Featured() {
 			</div>
 			<div className="featured-cards-container">
 				{featuredData.map((card) => (
-					<PortfolioCard
+					<FeaturedCard
 						key={card.id}
 						id={card.id}
 						title={card.title}
