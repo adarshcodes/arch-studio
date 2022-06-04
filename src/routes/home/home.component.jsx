@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Pagination from "../../components/pagination.component";
 import Hero from "./hero.component";
 import Welcome from "./welcome.component";
+import SmallTeams from "./smallTeams.component";
 
 export default function Home() {
 	return (
@@ -15,6 +16,7 @@ export default function Home() {
 			<Pagination page={"home"} />
 			<Hero />
 			<Welcome />
+			<SmallTeams />
 		</div>
 	);
 }
