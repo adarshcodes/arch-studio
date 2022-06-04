@@ -39,6 +39,8 @@ body {
   font-weight: bold;
   line-height: 20rem;
   letter-spacing: -0.5rem;
+  color: #eeeff4;
+  z-index: 100;
 }
 
 .heading-l {
@@ -245,8 +247,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  color: #eeeff4;
-  z-index: 100;
 }
 
 .welcome-section__content {
@@ -308,6 +308,92 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 6.4rem;
+}
+
+.featured-section .featured-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-card {
+  width: 35rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.portfolio-card .image-portfolio {
+  filter: brightness(0.7);
+  transition: all 0.3s;
+}
+
+.portfolio-card:hover .image-portfolio {
+  filter: brightness(0.9);
+  transform: scale(1.1);
+}
+
+.portfolio-card .portfolio-card-id {
+  position: absolute;
+  top: 4rem;
+  right: -1.06rem;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.portfolio-card:hover .portfolio-card-id {
+  top: 20%;
+  right: 30%;
+}
+
+.portfolio-card .portfolio-card-title-container {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.portfolio-card:hover .portfolio-card-title-container {
+  bottom: 25%;
+  left: 25%;
+  text-align: center;
+}
+
+.portfolio-card .portfolio-link .arrow-icon {
+  display: none;
+}
+
+.portfolio-card:hover .portfolio-link {
+  margin-top: 1rem;
+  padding: 1.2rem 2rem;
+  background-color: #1b1d23;
+  color: #ffffff;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-card:hover .portfolio-link:hover {
+  background-color: #60636d;
+}
+
+.portfolio-card:hover .portfolio-link:active {
+  background-color: #c8ccd8;
+}
+
+.portfolio-card:hover .portfolio-link .arrow-icon {
+  display: block;
+  filter: invert(1);
+  width: 13%;
+  margin-left: 1rem;
+  transition: all 0.3s;
+}
+
+.portfolio-card:hover .portfolio-link:hover .arrow-icon {
+  transform: translateX(0.5rem);
 }
 
 .navbar {
