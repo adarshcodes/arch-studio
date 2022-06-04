@@ -57,6 +57,7 @@ export default function Hero() {
 							<p className="hero-description">{slide.text}</p>
 							<Button
 								btn={`See Our Portfolio `}
+								linkedTo={"/portfolio"}
 								arrow={<img src={Arrow} alt="arrow" className="arrow-icon" />}
 							/>
 						</div>
