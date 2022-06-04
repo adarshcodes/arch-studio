@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 // importing components
 import Pagination from "../../components/pagination.component";
 import Hero from "./hero.component";
+import Welcome from "./welcome.component";
 
 export default function Home() {
 	return (
@@ -13,6 +14,7 @@ export default function Home() {
 			</Helmet>
 			<Pagination page={"home"} />
 			<Hero />
+			<Welcome />
 		</div>
 	);
 }

@@ -205,6 +205,40 @@ body {
   background-color: #1b1d23 !important;
 }
 
+.welcome-section {
+  margin-top: 10rem;
+  margin-bottom: 20rem;
+  position: relative;
+}
+
+.welcome-section .bold-span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #eeeff4;
+}
+
+.welcome-section__content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 8.7rem;
+  width: 100%;
+}
+
+.welcome-section__content__text-box {
+  display: flex;
+  flex-direction: row;
+  padding: 7.4rem 21rem 1rem 19rem;
+}
+
+.welcome-section__content .welcome-title {
+  margin-bottom: 4.3rem;
+}
+
+.welcome-section__content .welcome-text {
+  color: #60636d;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
