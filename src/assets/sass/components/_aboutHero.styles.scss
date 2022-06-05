@@ -20,24 +20,5 @@
 			left: -2rem;
 			top: -8rem;
 		}
-
-		&--description {
-			width: 44.6rem;
-
-			.bar {
-				width: 6.5rem;
-				height: 0.1rem;
-				background-color: $light-grey;
-				margin-bottom: 5.7rem;
-			}
-
-			h3 {
-				margin-bottom: 5rem;
-			}
-
-			p {
-				color: $dark-grey;
-			}
-		}
 	}
 }

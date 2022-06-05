@@ -436,23 +436,41 @@ body {
   top: -8rem;
 }
 
-.about-hero__content--description {
+.about-content {
   width: 44.6rem;
 }
 
-.about-hero__content--description .bar {
+.about-content .bar {
   width: 6.5rem;
   height: 0.1rem;
   background-color: #c8ccd8;
   margin-bottom: 5.7rem;
 }
 
-.about-hero__content--description h3 {
+.about-content h3 {
   margin-bottom: 5rem;
 }
 
-.about-hero__content--description p {
+.about-content p {
   color: #60636d;
+}
+
+.heritage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heritage .about-content {
+  align-self: flex-start;
+}
+
+.heritage .bar {
+  margin-bottom: 8.3rem;
+}
+
+.heritage .heading-m {
+  margin-bottom: 5.1rem;
 }
 
 .navbar {

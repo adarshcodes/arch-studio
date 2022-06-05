@@ -1,0 +1,15 @@
+.heritage {
+	@include flex-row-space-between;
+
+	.about-content {
+		align-self: flex-start;
+	}
+
+	.bar {
+		margin-bottom: 8.3rem;
+	}
+
+	.heading-m {
+		margin-bottom: 5.1rem;
+	}
+}

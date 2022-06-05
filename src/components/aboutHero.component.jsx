@@ -1,7 +1,5 @@
 import React from "react";
 
-import img from "../assets/images/about/image-hero.jpg";
-
 function AboutHero({ image, title, heading, desc }) {
 	return (
 		<div className="about-hero">
@@ -20,7 +18,7 @@ function AboutHero({ image, title, heading, desc }) {
 			</picture>
 			<div className="about-hero__content">
 				<span className="heading-xl">{title}</span>
-				<div className="about-hero__content--description">
+				<div className="about-hero__content--description about-content">
 					<div className="bar"></div>
 					<h3 className="heading-m">{heading}</h3>
 					<p>{desc}</p>

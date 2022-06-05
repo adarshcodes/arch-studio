@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 // importing components
 import Pagination from "../../components/pagination.component";
 import AboutHero from "../../components/aboutHero.component";
+import Heritage from "./heritage.component";
 
 // importing images
 import hero from "../../assets/images/about/image-hero.jpg";
@@ -40,6 +41,7 @@ export default function AboutUs() {
 				heading={heroData.heading}
 				desc={heroData.desc}
 			/>
+			<Heritage />
 		</section>
 	);
 }
