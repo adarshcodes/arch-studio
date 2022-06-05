@@ -6,6 +6,17 @@
 
 	&__img {
 		width: 63.5rem;
+		overflow: hidden;
+
+		img {
+			filter: brightness(0.65);
+			transition: all 0.3s;
+		}
+
+		&:hover img {
+			filter: brightness(0.8);
+			transform: scale(1.1);
+		}
 	}
 
 	&__content {

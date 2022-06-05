@@ -420,6 +420,17 @@ body {
 
 .about-hero__img {
   width: 63.5rem;
+  overflow: hidden;
+}
+
+.about-hero__img img {
+  filter: brightness(0.65);
+  transition: all 0.3s;
+}
+
+.about-hero__img:hover img {
+  filter: brightness(0.8);
+  transform: scale(1.1);
 }
 
 .about-hero__content {
@@ -459,10 +470,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20rem;
 }
 
 .heritage .about-content {
   align-self: flex-start;
+  overflow: hidden;
 }
 
 .heritage .bar {
@@ -471,6 +484,21 @@ body {
 
 .heritage .heading-m {
   margin-bottom: 5.1rem;
+}
+
+.heritage .heritage-img {
+  overflow: hidden;
+  height: 56.8rem;
+}
+
+.heritage .heritage-img img {
+  filter: brightness(0.65);
+  transition: all 0.3s;
+}
+
+.heritage .heritage-img:hover img {
+  filter: brightness(0.8);
+  transform: scale(1.1);
 }
 
 .navbar {
