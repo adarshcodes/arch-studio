@@ -1,5 +1,5 @@
 .featured-section {
-	margin-bottom: 20rem;
+	margin-bottom: 15rem;
 
 	.featured-title-part {
 		@include flex-row-space-between;
@@ -8,5 +8,6 @@
 
 	.featured-cards-container {
 		@include flex-row-space-between;
+		flex-wrap: wrap;
 	}
 }

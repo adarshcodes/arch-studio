@@ -300,7 +300,7 @@ body {
 }
 
 .featured-section {
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
 }
 
 .featured-section .featured-title-part {
@@ -314,6 +314,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .portfolio-card {
@@ -322,6 +323,7 @@ body {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  margin-bottom: 5rem;
 }
 
 .portfolio-card .image-portfolio {
