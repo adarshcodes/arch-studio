@@ -501,6 +501,71 @@ body {
   transform: scale(1.1);
 }
 
+.leaders-container {
+  margin-bottom: 9.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leaders-container .leaders-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 73rem;
+}
+
+.leaders-container .leader-card {
+  max-width: 35rem;
+  margin-bottom: 6.3rem;
+}
+
+.leaders-container .leader-card .leader-avatar {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  height: 32rem;
+  margin-bottom: 1.5rem;
+}
+
+.leaders-container .leader-card .leader-avatar .socialicons {
+  position: absolute;
+  font-size: 4rem;
+  color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.3s;
+}
+
+.leaders-container .leader-card .leader-avatar .socialicons a:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+.leaders-container .leader-card .leader-avatar .socialicons a {
+  transition: all 0.3s;
+}
+
+.leaders-container .leader-card .leader-avatar .socialicons a:hover {
+  color: #36b2f5;
+}
+
+.leaders-container .leader-card .leader-avatar:hover .socialicons {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.leaders-container .leader-card .leader-avatar img {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.leaders-container .leader-card .leader-avatar:hover img {
+  filter: blur(0.3rem);
+  transform: scale(1);
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
