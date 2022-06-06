@@ -1,0 +1,90 @@
+.contact-details {
+	margin-bottom: 19.9rem;
+	@include flex-row;
+	align-items: flex-start;
+	position: relative;
+	padding-top: 7.3rem;
+
+	.bar-heading,
+	.office {
+		max-width: 35rem;
+		margin-right: 3rem;
+	}
+
+	.offices {
+		width: auto;
+		@include flex-row-space-between;
+	}
+
+	.bar {
+		position: absolute;
+		width: 6.5rem;
+		height: 0.1rem;
+		top: 0;
+		background-color: #c8ccd8;
+	}
+
+	.bar-heading {
+		width: auto;
+	}
+
+	.office {
+		color: $dark-grey;
+
+		&:last-child {
+			margin-right: 0rem;
+		}
+
+		&-title {
+			font-weight: bold;
+			margin-bottom: 1.4rem;
+		}
+
+		&-address {
+			margin-bottom: 5.9rem;
+		}
+	}
+
+	.view-btn {
+		display: inline-flex;
+		align-items: center;
+		font-weight: bold;
+		color: $very-dark-blue;
+		cursor: pointer;
+		position: relative;
+
+		.arrow-icon {
+			width: 2.4rem;
+			transition: all 0.3s;
+			margin-left: 1.5rem;
+		}
+
+		&:hover .arrow-icon {
+			transform: translateX(1rem);
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 85%;
+			height: 0.2rem;
+			bottom: 0;
+			left: 0;
+			transform: scaleX(0);
+			transform-origin: bottom center;
+			transition: transform 0.3s ease-out;
+			background-color: $medium-grey;
+		}
+
+		&:hover:after {
+			transform: scaleX(1);
+			transform-origin: bottom center;
+		}
+	}
+}
+
+.contact-section {
+	.big-span {
+		left: -7rem !important;
+	}
+}

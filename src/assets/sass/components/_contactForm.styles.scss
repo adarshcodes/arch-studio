@@ -1,0 +1,52 @@
+.contact-form-container {
+	margin-bottom: 16rem;
+	@include flex-row;
+
+	.bar-heading {
+		max-width: 35rem;
+		margin-right: 3rem;
+	}
+
+	.contact-form {
+		width: 100%;
+		@include flex-column;
+
+		.contact-input {
+			&:not(:first-child) {
+				margin-top: 4.1rem;
+			}
+
+			.input-field {
+				display: flex;
+				width: 100%;
+				border: none;
+				border-bottom: 0.1rem solid $very-dark-blue;
+				padding: 0 3.44rem 2.1rem 3.44rem;
+				font-size: 2rem;
+				font-weight: bold;
+				color: $very-dark-blue;
+				transition: all 0.3s;
+
+				&::placeholder {
+					color: $light-grey;
+				}
+
+				&:focus {
+					outline: none;
+					border-bottom: 0.2rem solid $very-dark-blue;
+				}
+			}
+
+			textarea {
+				resize: none;
+			}
+		}
+	}
+
+	a {
+		align-self: flex-end;
+		.arrow-icon {
+			padding-left: 0 !important;
+		}
+	}
+}

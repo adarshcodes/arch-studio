@@ -17,7 +17,7 @@ function AboutHero({ image, title, heading, desc }) {
 				<img src={image.desktop} alt="hero-about" />
 			</picture>
 			<div className="about-hero__content">
-				<span className="heading-xl">{title}</span>
+				<span className="heading-xl big-span">{title}</span>
 				<div className="about-hero__content--description about-content">
 					<div className="bar"></div>
 					<h3 className="heading-m">{heading}</h3>

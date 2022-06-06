@@ -4,6 +4,8 @@ import Helmet from "react-helmet";
 // importing components
 import Pagination from "../../components/pagination.component";
 import AboutHero from "../../components/aboutHero.component";
+import ContactDetails from "./contactDetails.component";
+import ContactForm from "./contactForm.component";
 
 // importing images
 import hero from "../../assets/images/contact/image-hero.jpg";
@@ -27,7 +29,7 @@ export default function Contact() {
 	}, []);
 
 	return (
-		<div>
+		<section className="contact-section">
 			<Helmet>
 				<title>Arch Studio | Contact Us</title>
 			</Helmet>
@@ -38,6 +40,8 @@ export default function Contact() {
 				heading={heroData.heading}
 				desc={heroData.desc}
 			/>
-		</div>
+			<ContactDetails />
+			<ContactForm />
+		</section>
 	);
 }
