@@ -6,6 +6,7 @@ import Pagination from "../../components/pagination.component";
 import AboutHero from "../../components/aboutHero.component";
 import ContactDetails from "./contactDetails.component";
 import ContactForm from "./contactForm.component";
+import Map from "./map.component";
 
 // importing images
 import hero from "../../assets/images/contact/image-hero.jpg";
@@ -41,6 +42,7 @@ export default function Contact() {
 				desc={heroData.desc}
 			/>
 			<ContactDetails />
+			<Map />
 			<ContactForm />
 		</section>
 	);
