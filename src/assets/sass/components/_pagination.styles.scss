@@ -1,18 +1,21 @@
 .pagename {
 	color: $light-grey;
-	@include flex-row;
-	align-items: center;
+	@include flex-row-center;
 	text-transform: uppercase;
-	width: 30%;
+	width: auto;
 	position: absolute;
-	left: -13.4rem;
-	top: 21.8rem;
-	transform: rotate(90deg);
+	left: 6.3rem;
+	top: 0rem;
+	writing-mode: vertical-lr;
+
+	@media screen and (max-width: 850px) {
+		left: 3.8rem;
+	}
 
 	&__line {
-		width: 10.4rem;
-		height: 0.1rem;
-		margin-right: 4.8rem;
+		height: 10.4rem;
+		width: 0.1rem;
+		margin-bottom: 4.8rem;
 		background-color: $light-grey;
 		transition: all 0.3s;
 	}
