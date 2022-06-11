@@ -431,14 +431,23 @@ body {
 
 .smallTeams-section {
   margin-bottom: 20rem;
+  height: 56rem;
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .smallTeams-section {
+    margin-bottom: 7.3rem;
+  }
 }
 
 .smallTeams-section .image-small {
   filter: brightness(0.65);
   transition: all 0.3s;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .smallTeams-section:hover .image-small {
@@ -458,8 +467,35 @@ body {
   color: #ffffff;
 }
 
+@media screen and (max-width: 1100px) {
+  .smallTeams-section__content {
+    left: 0;
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .smallTeams-section__content {
+    margin-left: 5.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .smallTeams-section__content {
+    margin: 0 3.2rem;
+    margin-bottom: 7.3rem;
+  }
+}
+
 .featured-section {
   margin-bottom: 15rem;
+  padding: 0 3.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .featured-section {
+    margin-bottom: 7.2rem;
+  }
 }
 
 .featured-section .featured-title-part {
@@ -469,11 +505,31 @@ body {
   margin-bottom: 6.4rem;
 }
 
+@media screen and (max-width: 600px) {
+  .featured-section .featured-title-part .button {
+    display: none;
+  }
+}
+
 .featured-section .featured-cards-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.featured-section .button {
+  display: none;
+  margin-top: 2.4rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .featured-section .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .portfolio-card {
@@ -485,9 +541,30 @@ body {
   margin-bottom: 5rem;
 }
 
+@media screen and (max-width: 850px) {
+  .portfolio-card {
+    width: 100%;
+    height: 24rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-card {
+    height: 31.1rem;
+  }
+}
+
 .portfolio-card .image-portfolio {
   filter: brightness(0.7);
   transition: all 0.3s;
+}
+
+@media screen and (max-width: 850px) {
+  .portfolio-card .image-portfolio {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .portfolio-card:hover .image-portfolio {
@@ -501,6 +578,19 @@ body {
   right: -1.06rem;
   opacity: 0.5;
   transition: all 0.3s;
+}
+
+@media screen and (max-width: 850px) {
+  .portfolio-card .portfolio-card-id {
+    font-size: 25rem;
+    right: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portfolio-card .portfolio-card-id {
+    display: none;
+  }
 }
 
 .portfolio-card:hover .portfolio-card-id {
@@ -518,6 +608,13 @@ body {
 
 .portfolio-card:hover .portfolio-card-title-container {
   bottom: 25%;
+}
+
+@media screen and (max-width: 450px) {
+  .portfolio-card:hover .portfolio-card-title-container {
+    bottom: 30%;
+    left: 25%;
+  }
 }
 
 .portfolio-card:hover .portfolio-card-title-container h5 {

@@ -68,6 +68,7 @@ function Featured() {
 					/>
 				))}
 			</div>
+			<Button btn={`See All`} linkedTo={"/portfolio"} />
 		</section>
 	);
 }

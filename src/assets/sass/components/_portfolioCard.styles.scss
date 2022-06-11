@@ -6,9 +6,24 @@
 	overflow: hidden;
 	margin-bottom: 5rem;
 
+	@media screen and (max-width: 850px) {
+		width: 100%;
+		height: 24rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		height: 31.1rem;
+	}
+
 	.image-portfolio {
 		filter: brightness(0.7);
 		transition: all 0.3s;
+
+		@media screen and (max-width: 850px) {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 
 	&:hover .image-portfolio {
@@ -22,6 +37,15 @@
 		right: -1.06rem;
 		opacity: 0.5;
 		transition: all 0.3s;
+
+		@media screen and (max-width: 850px) {
+			font-size: 25rem;
+			right: 1.6rem;
+		}
+
+		@media screen and (max-width: 450px) {
+			display: none;
+		}
 	}
 
 	&:hover .portfolio-card-id {
@@ -39,6 +63,11 @@
 
 	&:hover .portfolio-card-title-container {
 		bottom: 25%;
+
+		@media screen and (max-width: 450px) {
+			bottom: 30%;
+			left: 25%;
+		}
 
 		h5 {
 			text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2) !important;
