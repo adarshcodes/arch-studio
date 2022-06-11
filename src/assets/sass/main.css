@@ -540,6 +540,19 @@ body {
   }
 }
 
+.portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 13.2rem;
+  padding: 3.2rem 3.2rem 0 3.2rem;
+}
+
+.portfolio-container .portfolio-page-card {
+  margin-bottom: 5rem;
+}
+
 .portfolio-card {
   width: 35rem;
   height: 56rem;
@@ -621,7 +634,6 @@ body {
 @media screen and (max-width: 450px) {
   .portfolio-card:hover .portfolio-card-title-container {
     bottom: 30%;
-    left: 25%;
   }
 }
 
@@ -663,17 +675,6 @@ body {
 
 .portfolio-card:hover .portfolio-link:hover .arrow-icon {
   transform: translateX(0.5rem);
-}
-
-.portfolio-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.portfolio-container .portfolio-page-card {
-  margin-bottom: 5rem;
 }
 
 .about-hero {

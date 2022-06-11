@@ -1,3 +1,14 @@
+.portfolio-container {
+	@include flex-row-space-between;
+	flex-wrap: wrap;
+	margin-bottom: 13.2rem;
+	padding: 3.2rem 3.2rem 0 3.2rem;
+
+	.portfolio-page-card {
+		margin-bottom: 5rem;
+	}
+}
+
 .portfolio-card {
 	width: 35rem;
 	height: 56rem;
@@ -66,7 +77,6 @@
 
 		@media screen and (max-width: 450px) {
 			bottom: 30%;
-			left: 25%;
 		}
 
 		h5 {
@@ -110,14 +120,5 @@
 		&:hover .arrow-icon {
 			transform: translateX(0.5rem);
 		}
-	}
-}
-
-.portfolio-container {
-	@include flex-row-space-between;
-	flex-wrap: wrap;
-
-	.portfolio-page-card {
-		margin-bottom: 5rem;
 	}
 }
