@@ -16,10 +16,10 @@ export default function Hero() {
 				spaceBetween={20}
 				slidesPerView={1}
 				loop={true}
-				autoplay={{
-					delay: 2500,
-					disableOnInteraction: false,
-				}}
+				// autoplay={{
+				// 	delay: 2500,
+				// 	disableOnInteraction: false,
+				// }}
 				pagination={{
 					clickable: true,
 					type: "bullets",

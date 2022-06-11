@@ -7,6 +7,10 @@
 	position: relative;
 	height: 72rem;
 	margin: 0 !important;
+
+	@media screen and (max-width: 600px) {
+		height: 56rem;
+	}
 }
 
 .hero-img {
@@ -26,10 +30,30 @@
 	@media screen and (max-width: 1100px) {
 		left: 10%;
 	}
+
+	@media screen and (max-width: 800px) {
+		left: 0;
+		width: auto;
+		margin: 0 5.8rem;
+	}
+
+	@media screen and (max-width: 700px) {
+		margin: 0 3.2rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		top: 0;
+		margin: 11.3rem 3.2rem;
+	}
 }
 
 .hero-title {
 	margin-bottom: 1rem;
+
+	@media screen and (max-width: 600px) {
+		font-size: 7rem;
+		line-height: 6.8rem;
+	}
 }
 
 .hero-description {

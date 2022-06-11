@@ -67,6 +67,7 @@
 	}
 
 	.ham-nav {
+		display: none;
 		position: absolute;
 		bottom: -18.7rem;
 		right: 0;
@@ -99,5 +100,6 @@
 
 	.toggle-ham {
 		transform: translateX(0);
+		display: block;
 	}
 }
