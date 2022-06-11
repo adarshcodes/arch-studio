@@ -3,15 +3,54 @@
 	@include flex-row;
 	justify-content: space-between;
 
+	@media screen and (max-width: 1150px) {
+		flex-direction: column;
+	}
+
+	@media screen and (max-width: 850px) {
+		margin-bottom: 23.9rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		padding: 0 3.2rem;
+	}
+
+	.heading-m {
+		margin-right: 2rem;
+
+		@media screen and (max-width: 1150px) {
+			margin-bottom: 4.9rem;
+			margin-right: 0;
+		}
+	}
+
 	.leaders-cards-container {
 		@include flex-row-space-between;
 		flex-wrap: wrap;
-		max-width: 73rem;
+		width: 73rem;
+
+		@media screen and (max-width: 1150px) {
+			width: 100%;
+		}
 	}
 
 	.leader-card {
-		max-width: 35rem;
+		width: 35rem;
 		margin-bottom: 6.3rem;
+
+		@media screen and (max-width: 1290px) {
+			width: 28rem;
+		}
+
+		@media screen and (max-width: 1150px) {
+			width: 35rem;
+		}
+
+		@media screen and (max-width: 1050px) {
+			width: 28rem;
+			flex: 1 0 20rem;
+			margin: 2rem 2rem 2rem 0;
+		}
 
 		.leader-avatar {
 			position: relative;
@@ -19,6 +58,10 @@
 			overflow: hidden;
 			height: 32rem;
 			margin-bottom: 1.5rem;
+
+			@media screen and (max-width: 1050px) {
+				height: 25rem;
+			}
 
 			.socialicons {
 				position: absolute;
@@ -49,7 +92,9 @@
 			img {
 				transform: scale(1.1);
 				transition: all 0.3s;
+				width: 100%;
 				height: 100%;
+				object-fit: cover;
 			}
 
 			&:hover img {

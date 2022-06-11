@@ -2,9 +2,23 @@
 	@include flex-row-space-between;
 	margin-bottom: 20rem;
 
+	@media screen and (max-width: 600px) {
+		padding: 0 3.2rem;
+		margin-top: 40rem;
+		margin-bottom: 11.3rem;
+	}
+
 	.about-content {
 		align-self: flex-start;
 		overflow: hidden;
+
+		@media screen and (max-width: 1320px) {
+			margin-right: 3rem;
+		}
+
+		@media screen and (max-width: 1020px) {
+			width: 100%;
+		}
 	}
 
 	.bar {
@@ -18,6 +32,10 @@
 	.heritage-img {
 		overflow: hidden;
 		height: 56.8rem;
+
+		@media screen and (max-width: 850px) {
+			display: none;
+		}
 
 		img {
 			filter: brightness(0.65);

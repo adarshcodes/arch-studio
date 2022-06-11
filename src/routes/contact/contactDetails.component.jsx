@@ -24,13 +24,13 @@ function ContactDetails() {
 				</div>
 
 				<div className="office">
-					<p className="office-title">Main Office</p>
+					<p className="office-title">Office II</p>
 					<p className="office-address">
 						Mail: archone@mail.com
 						<br />
-						Address: 1892 Chenoweth Drive TN
+						Address : 3399 Wines Lane TX
 						<br />
-						Phone: 123-456-3451
+						Phone : 832-123-4321
 					</p>
 					<ViewButton />
 				</div>

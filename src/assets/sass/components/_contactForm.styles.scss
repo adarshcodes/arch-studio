@@ -2,9 +2,24 @@
 	margin-bottom: 16rem;
 	@include flex-row;
 
+	@media screen and (max-width: 850px) {
+		flex-direction: column;
+		margin-bottom: 20rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		margin-bottom: 13.2rem;
+		padding: 0 3.2rem;
+	}
+
 	.bar-heading {
-		max-width: 35rem;
+		width: 35rem;
 		margin-right: 3rem;
+
+		@media screen and (max-width: 600px) {
+			margin-right: 0;
+			width: auto;
+		}
 	}
 
 	.contact-form {
