@@ -8,8 +8,8 @@ This is a solution to the [Arch Studio multi-page website challenge on Frontend 
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/mulitipage-website-using-react-router-and-sasswith-flexbox-nrWj85ELHX)
+- Live Site URL: (https://arch-studio-opal.vercel.app/)
 - Repository URL: (https://github.com/adarshcodes/arch-studio)
 
 ## My process
