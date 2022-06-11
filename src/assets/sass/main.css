@@ -1003,6 +1003,7 @@ body {
   .navbar {
     justify-content: space-between;
     padding: 3.2rem;
+    z-index: 2000;
   }
 }
 
@@ -1081,7 +1082,7 @@ body {
   background-color: #c8ccd8;
   z-index: 1000;
   transition: all 0.2s ease-in-out;
-  transform: translateX(500%);
+  transform: translateY(-500%);
 }
 
 .navbar .ham-nav .ham__list {
@@ -1106,7 +1107,7 @@ body {
 }
 
 .navbar .toggle-ham {
-  transform: translateX(0);
+  transform: translateY(0);
   visibility: visible;
 }
 
