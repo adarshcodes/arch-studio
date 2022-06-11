@@ -34,6 +34,12 @@ body li {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 0;
+  }
+}
+
 body {
   font-family: "League Spartan", sans-serif;
   font-size: 1.8rem;
@@ -116,6 +122,12 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .pagename {
+    display: none;
+  }
+}
+
 .pagename__line {
   height: 10.4rem;
   width: 0.1rem;
@@ -181,6 +193,12 @@ body {
   margin: 0 !important;
 }
 
+@media screen and (max-width: 600px) {
+  .swiper {
+    height: 56rem;
+  }
+}
+
 .hero-img {
   width: 100%;
   height: 100%;
@@ -202,8 +220,36 @@ body {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .slider-hero-info {
+    left: 0;
+    width: auto;
+    margin: 0 5.8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .slider-hero-info {
+    margin: 0 3.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider-hero-info {
+    top: 24%;
+    margin: 0 3.2rem;
+  }
+}
+
 .hero-title {
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-title {
+    font-size: 7rem;
+    line-height: 6.8rem;
+  }
 }
 
 .hero-description {
@@ -260,6 +306,19 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 850px) {
+  .welcome-section {
+    margin-top: 8.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-section {
+    padding: 0 3.2rem;
+    margin-bottom: 11.3rem;
+  }
+}
+
 .welcome-section .welcome-img-container {
   overflow: hidden;
   min-width: 35rem;
@@ -290,6 +349,18 @@ body {
 @media screen and (max-width: 1130px) {
   .welcome-section .bold-span {
     position: relative;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .welcome-section .bold-span {
+    font-size: 12rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-section .bold-span {
+    display: none;
   }
 }
 
@@ -335,6 +406,26 @@ body {
 @media screen and (max-width: 1130px) {
   .welcome-section__content {
     padding-top: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .welcome-section__content {
+    padding-top: 0;
+  }
+}
+
+.welcome-section .bar {
+  display: none;
+  width: 6.5rem;
+  height: 0.1rem;
+  background-color: #c8ccd8;
+  margin-bottom: 6.9rem;
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-section .bar {
+    display: block;
   }
 }
 
@@ -799,10 +890,24 @@ body {
   flex-direction: row;
   max-width: 50.4rem;
   padding: 5.6rem 0;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 3.2rem;
+  }
 }
 
 .navbar__logo {
   margin-right: 9.484rem;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar__logo {
+    margin-right: 0;
+  }
 }
 
 .navbar__list {
@@ -810,6 +915,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar__list {
+    display: none;
+  }
 }
 
 .navbar__list-item {
@@ -841,6 +952,56 @@ body {
 .navbar__list-item:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.navbar .ham {
+  align-self: center;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .ham {
+    display: block;
+  }
+}
+
+.navbar .ham-nav {
+  display: none;
+  position: absolute;
+  bottom: -18.7rem;
+  right: 0;
+  width: 34.3rem;
+  padding: 3.9rem 4.8rem;
+  background-color: #c8ccd8;
+  z-index: 1000;
+  transition: all 0.2s ease-in-out;
+  transform: translateX(500%);
+}
+
+.navbar .ham-nav .ham__list {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar .ham-nav .ham__list li:not(:last-child) {
+  margin-bottom: 1.7rem;
+}
+
+.navbar .ham-nav .ham__list li {
+  color: #1b1d23;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .ham-nav .ham__list {
+    display: block;
+  }
+}
+
+.navbar .toggle-ham {
+  transform: translateX(0);
+  display: block;
 }
 
 .footer {

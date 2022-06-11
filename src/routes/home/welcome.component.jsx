@@ -9,6 +9,8 @@ function Welcome() {
 			<div className="welcome-section__content">
 				<div className="welcome-section__content__text-box">
 					<div className="welcome-section__content__text">
+						<div className="bar"></div>
+
 						<h3 className="heading-m welcome-title">
 							Welcome to <br /> Arch Studio
 						</h3>

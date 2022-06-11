@@ -3,6 +3,15 @@
 	margin-bottom: 20rem;
 	position: relative;
 
+	@media screen and (max-width: 850px) {
+		margin-top: 8.9rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		padding: 0 3.2rem;
+		margin-bottom: 11.3rem;
+	}
+
 	.welcome-img-container {
 		overflow: hidden;
 		min-width: 35rem;
@@ -16,12 +25,28 @@
 			transition: all 0.3s;
 			z-index: -1;
 		}
+
+		@media screen and (max-width: 1130px) {
+			display: none;
+		}
 	}
 
 	.bold-span {
 		position: absolute;
 		top: 0;
 		left: 0;
+
+		@media screen and (max-width: 1130px) {
+			position: relative;
+		}
+
+		@media screen and (max-width: 950px) {
+			font-size: 12rem;
+		}
+
+		@media screen and (max-width: 600px) {
+			display: none;
+		}
 	}
 
 	&__content {
@@ -30,8 +55,22 @@
 		width: 100%;
 
 		&__text-box {
+			width: 100%;
 			@include flex-row;
-			padding: 7.4rem 21rem 1rem 19rem;
+			align-items: flex-end;
+			justify-content: center;
+		}
+
+		&__text {
+			width: 44.6rem;
+
+			@media screen and (max-width: 1130px) {
+				width: 80%;
+			}
+
+			@media screen and (max-width: 850px) {
+				width: 100%;
+			}
 		}
 
 		.welcome-title {
@@ -40,6 +79,26 @@
 
 		.welcome-text {
 			color: $dark-grey;
+		}
+
+		@media screen and (max-width: 1130px) {
+			padding-top: 2.4rem;
+		}
+
+		@media screen and (max-width: 850px) {
+			padding-top: 0;
+		}
+	}
+
+	.bar {
+		display: none;
+		width: 6.5rem;
+		height: 0.1rem;
+		background-color: #c8ccd8;
+		margin-bottom: 6.9rem;
+
+		@media screen and (max-width: 600px) {
+			display: block;
 		}
 	}
 }

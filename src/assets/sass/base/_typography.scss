@@ -11,6 +11,10 @@ body {
 	letter-spacing: -0.5rem;
 	color: $very-light-grey;
 	z-index: 100;
+
+	@media screen and (max-width: 1270px) {
+		font-size: 17.5rem;
+	}
 }
 
 .heading-l {
